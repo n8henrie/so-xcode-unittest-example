@@ -6,12 +6,38 @@
 	objectVersion = 55;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		600F668228BC521A006D2593 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600F668128BC521A006D2593 /* File.swift */; };
+		600F668A28BC5239006D2593 /* SOExample_Unit_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600F668928BC5239006D2593 /* SOExample_Unit_Tests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		600F668E28BC5289006D2593 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 600F667128BC5210006D2593 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 600F667828BC5210006D2593;
+			remoteInfo = SOExample;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		600F667928BC5210006D2593 /* SOExample.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SOExample.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		600F668028BC521A006D2593 /* SOExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SOExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		600F668128BC521A006D2593 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		600F668728BC5239006D2593 /* SOExample Unit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SOExample Unit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		600F668928BC5239006D2593 /* SOExample_Unit_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SOExample_Unit_Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		600F667628BC5210006D2593 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		600F668428BC5239006D2593 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -24,7 +50,10 @@
 		600F667028BC5210006D2593 = {
 			isa = PBXGroup;
 			children = (
+				600F668128BC521A006D2593 /* File.swift */,
+				600F668828BC5239006D2593 /* SOExample Unit Tests */,
 				600F667A28BC5210006D2593 /* Products */,
+				600F668028BC521A006D2593 /* SOExample-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -32,8 +61,17 @@
 			isa = PBXGroup;
 			children = (
 				600F667928BC5210006D2593 /* SOExample.plugin */,
+				600F668728BC5239006D2593 /* SOExample Unit Tests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		600F668828BC5239006D2593 /* SOExample Unit Tests */ = {
+			isa = PBXGroup;
+			children = (
+				600F668928BC5239006D2593 /* SOExample_Unit_Tests.swift */,
+			);
+			path = "SOExample Unit Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -56,6 +94,24 @@
 			productReference = 600F667928BC5210006D2593 /* SOExample.plugin */;
 			productType = "com.apple.product-type.bundle";
 		};
+		600F668628BC5239006D2593 /* SOExample Unit Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 600F668B28BC5239006D2593 /* Build configuration list for PBXNativeTarget "SOExample Unit Tests" */;
+			buildPhases = (
+				600F668328BC5239006D2593 /* Sources */,
+				600F668428BC5239006D2593 /* Frameworks */,
+				600F668528BC5239006D2593 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				600F668F28BC5289006D2593 /* PBXTargetDependency */,
+			);
+			name = "SOExample Unit Tests";
+			productName = "SOExample Unit Tests";
+			productReference = 600F668728BC5239006D2593 /* SOExample Unit Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -63,9 +119,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					600F667828BC5210006D2593 = {
+						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
+					};
+					600F668628BC5239006D2593 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
@@ -84,12 +145,20 @@
 			projectRoot = "";
 			targets = (
 				600F667828BC5210006D2593 /* SOExample */,
+				600F668628BC5239006D2593 /* SOExample Unit Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		600F667728BC5210006D2593 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		600F668528BC5239006D2593 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -103,10 +172,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				600F668228BC521A006D2593 /* File.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		600F668328BC5239006D2593 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				600F668A28BC5239006D2593 /* SOExample_Unit_Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		600F668F28BC5289006D2593 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 600F667828BC5210006D2593 /* SOExample */;
+			targetProxy = 600F668E28BC5289006D2593 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		600F667B28BC5210006D2593 /* Debug */ = {
@@ -221,6 +307,7 @@
 		600F667E28BC5210006D2593 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -228,11 +315,19 @@
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSPrincipalClass = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.blacktree.QSasdf.SOExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SOExample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = plugin;
 			};
 			name = Debug;
@@ -240,6 +335,7 @@
 		600F667F28BC5210006D2593 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -247,12 +343,51 @@
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSPrincipalClass = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.blacktree.QSasdf.SOExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SOExample-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = plugin;
+			};
+			name = Release;
+		};
+		600F668C28BC5239006D2593 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blacktree.QSasdf.SOExample-Unit-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		600F668D28BC5239006D2593 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.blacktree.QSasdf.SOExample-Unit-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -273,6 +408,15 @@
 			buildConfigurations = (
 				600F667E28BC5210006D2593 /* Debug */,
 				600F667F28BC5210006D2593 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		600F668B28BC5239006D2593 /* Build configuration list for PBXNativeTarget "SOExample Unit Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				600F668C28BC5239006D2593 /* Debug */,
+				600F668D28BC5239006D2593 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
